@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		663CFC8A23435B7100BC708F /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663CFC8923435B7100BC708F /* LaunchViewController.swift */; };
+		663CFC8C23435BAE00BC708F /* LaunchStorybord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 663CFC8B23435BAE00BC708F /* LaunchStorybord.storyboard */; };
+		663CFC8F23437D3C00BC708F /* LaunchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663CFC8E23437D3C00BC708F /* LaunchCell.swift */; };
+		663CFC9123437D9B00BC708F /* LaunchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 663CFC9023437D9B00BC708F /* LaunchCell.xib */; };
+		663CFC942343854700BC708F /* String+Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663CFC932343854700BC708F /* String+Url.swift */; };
+		663CFC962343885B00BC708F /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663CFC952343885B00BC708F /* Launch.swift */; };
 		664A601423435742004C1CB5 /* LaunchDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A600E23435742004C1CB5 /* LaunchDTO.swift */; };
 		664A601523435742004C1CB5 /* LaunchDTOConversor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A600F23435742004C1CB5 /* LaunchDTOConversor.swift */; };
 		664A601623435742004C1CB5 /* LaunchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 664A601123435742004C1CB5 /* LaunchModel.swift */; };
@@ -21,6 +27,12 @@
 
 /* Begin PBXFileReference section */
 		385D11A38B894BB23EFC5A1D /* Pods-Workshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Workshop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Workshop/Pods-Workshop.debug.xcconfig"; sourceTree = "<group>"; };
+		663CFC8923435B7100BC708F /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		663CFC8B23435BAE00BC708F /* LaunchStorybord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchStorybord.storyboard; sourceTree = "<group>"; };
+		663CFC8E23437D3C00BC708F /* LaunchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCell.swift; sourceTree = "<group>"; };
+		663CFC9023437D9B00BC708F /* LaunchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchCell.xib; sourceTree = "<group>"; };
+		663CFC932343854700BC708F /* String+Url.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Url.swift"; sourceTree = "<group>"; };
+		663CFC952343885B00BC708F /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 		664A600E23435742004C1CB5 /* LaunchDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchDTO.swift; sourceTree = "<group>"; };
 		664A600F23435742004C1CB5 /* LaunchDTOConversor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchDTOConversor.swift; sourceTree = "<group>"; };
 		664A601123435742004C1CB5 /* LaunchModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchModel.swift; sourceTree = "<group>"; };
@@ -48,12 +60,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		663CFC8823435B6000BC708F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				663CFC8D23437D2100BC708F /* Cell */,
+				663CFC8923435B7100BC708F /* LaunchViewController.swift */,
+				663CFC8B23435BAE00BC708F /* LaunchStorybord.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		663CFC8D23437D2100BC708F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				663CFC8E23437D3C00BC708F /* LaunchCell.swift */,
+				663CFC9023437D9B00BC708F /* LaunchCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		663CFC922343853A00BC708F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				663CFC932343854700BC708F /* String+Url.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		664A600C23435742004C1CB5 /* Launch */ = {
 			isa = PBXGroup;
 			children = (
+				663CFC8823435B6000BC708F /* View */,
 				664A600D23435742004C1CB5 /* DTO */,
 				664A601023435742004C1CB5 /* Model */,
 				664A601223435742004C1CB5 /* Services */,
+				663CFC952343885B00BC708F /* Launch.swift */,
 			);
 			name = Launch;
 			path = Modules/Launch;
@@ -105,6 +146,7 @@
 		664F17822343331A00BF74DD /* Workshop */ = {
 			isa = PBXGroup;
 			children = (
+				663CFC922343853A00BC708F /* Common */,
 				664A600C23435742004C1CB5 /* Launch */,
 				664F17832343331A00BF74DD /* AppDelegate.swift */,
 				664F17852343331A00BF74DD /* ViewController.swift */,
@@ -193,7 +235,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				663CFC8C23435BAE00BC708F /* LaunchStorybord.storyboard in Resources */,
 				664F178E2343331B00BF74DD /* LaunchScreen.storyboard in Resources */,
+				663CFC9123437D9B00BC708F /* LaunchCell.xib in Resources */,
 				664F178B2343331B00BF74DD /* Assets.xcassets in Resources */,
 				664F17892343331A00BF74DD /* Main.storyboard in Resources */,
 			);
@@ -236,6 +280,7 @@
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -245,6 +290,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,11 +305,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				663CFC942343854700BC708F /* String+Url.swift in Sources */,
 				664F17862343331A00BF74DD /* ViewController.swift in Sources */,
 				664F17842343331A00BF74DD /* AppDelegate.swift in Sources */,
 				664A601723435742004C1CB5 /* LaunchService.swift in Sources */,
 				664A601523435742004C1CB5 /* LaunchDTOConversor.swift in Sources */,
 				664A601423435742004C1CB5 /* LaunchDTO.swift in Sources */,
+				663CFC8A23435B7100BC708F /* LaunchViewController.swift in Sources */,
+				663CFC8F23437D3C00BC708F /* LaunchCell.swift in Sources */,
+				663CFC962343885B00BC708F /* Launch.swift in Sources */,
 				664A601623435742004C1CB5 /* LaunchModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
